@@ -1,4 +1,7 @@
-header { background-color: #EAC926; }
+header { 
+    background-color: #EAC926;
+    margin: auto;
+ }
 
 
 body{
@@ -38,27 +41,23 @@ p {
         font-size: 18px;
         margin-top: 0px;
         margin-bottom: 0px;
+        flex: 1 1 30%;
     }
-
-    #compras{
-        text-align: right;
-   
-    }
-    
-    #ofertas{
-        text-align: right;
-    }
-
 
     .descuento {
         color: #39b54a;
         margin-top: 0px;
         margin-bottom: 0px;
+        flex: 1 1 70%;
     }
 
     .desc {
         display: none;
-        font-weight: bold;                    
+        font-weight: bold;       
+        flex: 1 1 100%;
+        text-align: left;
+        margin-top: 12px;
+        margin-bottom: 12px;             
     }
 
     footer {
@@ -78,6 +77,10 @@ p {
         margin-top: 1px;
         margin-left: 60px;
         margin-right: 60px;
+    }
+
+    .banner {
+        margin: auto;
     }
 
    footer i {
@@ -122,8 +125,13 @@ p {
     background-color: white;
     border-top: 1px solid #ebebeb;
     padding: 15px;
-
 }
+
+.detalle {
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 @media screen and (min-width :361px){
