@@ -73,38 +73,49 @@
     </header>
 
     <main>
-        <article class="formularioCont">
+        <section class="registracion">
+            <article class="formularioCont">
 
-            <form method="POST" action="#" class="registro-form">
-                <div>
-                    <input type="text" placeholder=" Nombre y Apellido " name="name-last" class="name-lastname"></input>
-                </div>
-                <div>
-                    <input type="text" placeholder=" Username " name="username" class="username"></input>
-                </div>
-                <div>
-                    <input type="text" placeholder=" Email " name="email" class="email"></input>
-                </div>
-                <div>
-                    <input type="password" placeholder=" Contraseña " name="pass" class="pass"></input>
-                </div>
-                <div>
-                    <input type="password-conf" placeholder=" Confirmar Contraseña " name="conpass" class="conpass"></input>
-                </div>
-                <div>
-                    <label>Fecha De Nacimiento</label>
-                    <input type="text" placeholder="  mm/dd/yyyy" name="birthdate" class="birthdat"></input>
-                </div>
-                <div>
-                    <input type="text" placeholder=" Domicilio " name="adress" class="adress"></input>
-                </div>
-            </form>
-            <a href='/views/home.html' > <button type="submit" placeholder=" Enviar ">  </a>
-            <button  type="reset" placeholder=" Reset ">
+                <form method="POST" action="#" class="registro-form">
+                    <div>
+                        <input type="text" placeholder=" Nombre y Apellido " name="name-last"
+                            class="name-lastname"></input>
+                    </div>
+                    <div>
+                        <input type="text" placeholder=" Username " name="username" class="username"></input>
+                    </div>
+                    <div>
+                        <input type="text" placeholder=" Email " name="email" class="email"></input>
+                    </div>
+                    <label for="pass">Contraseña</label>
+                    <div>
 
-            
-        </article>
+                        <input type="password" placeholder=" Contraseña " name="pass" class="pass"></input>
+                    </div>
+                    <label for="conpass">Confirmar la contraseña</label>
+                    <div>
+                        <input type="password-conf" placeholder=" Confirmar Contraseña " name="conpass"
+                            class="conpass"></input>
+                    </div>
+                    <label for="birthdate">Introduce tu fecha de nacimiento</label>
+                    <div>
+                        <input type="text" placeholder="  mm/dd/yyyy" name="birthdate" class="birthdate"></input>
+                    </div>
+                    <label for="adress">Domicilio</label>
+                    <div>
+                        <input type="text" placeholder=" Domicilio " name="adress" class="adress"></input>
+                    </div>
+                    <label for="img">Selecciona tu Imagen:</label>
+                    <div>
+                        <input type="file" id="img" name="img" accept=".jpg,.png">
+                        <input type="submit">
+                    </div>
+                </form>
+                <a href='/views/home.html'> <button type="submit" class="boton" placeholder=" Enviar "> </a>
+                <button type="reset" class="boton" placeholder=" Reset ">
 
+            </article>
+        </section>
     </main>
 
     <footer>
