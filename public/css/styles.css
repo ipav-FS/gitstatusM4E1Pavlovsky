@@ -181,6 +181,7 @@ main {
     }
 
    .items {
+        transition-duration: 0.5ms;
         font-size: 16px;
         display: flex;
         flex-flow: column;
@@ -332,8 +333,9 @@ main {
     }
 
     .desc {
-        display: none;
-       color:#fff;
+    transition-duration: 0.5ms;
+    display: none;
+    color:#fff;
     }
 
     .desc:hover {
