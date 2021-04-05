@@ -29,7 +29,7 @@
                         </form>
 
                         <div class="botonBus">
-                            <button type="submit" class="boton"><i class="fa fa-search"></i></button>
+                            <button type="submit" class="boton-1"><i class="fa fa-search"></i></button>
                         </div>
                         <p class="ofertaTarj">
                             Comprá en cuotas y sin tarjeta de crédito <i class="fas fa-hand-holding-usd"></i>
@@ -39,27 +39,28 @@
             </form>
         </div>
 
-        <nav>
-            <ul class="siteCat">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
+        <nav class="elements">
+            <ul type="none" class="siteCat">
+                <li class="cat1"><a href="#">Ofertas</a></li>
+                <li class="cat2"><a href="#">Tiendas Oficiales</a></li>
+                <li class="cat3"><a href="#">Vender</a></li>
+                <li class="cat4"><a href="#">Ayuda</a></li>
             </ul>
 
             <nav class="siteLogin">
-                <ul>
-                    <li><a href="/register">Creá tu cuenta
+                <ul type="none" class="login2">
+                    <li class="site-ut1"><a href="./register.html">Creá tu cuenta
                             <i class="far fa-id-card"></i>
                         </a></li>
-                    <li><a href="/login">Ingresá
+                    <li class="site-ut2"><a href="./login.html">Ingresá
                             <i class="fas fa-sign-in-alt"></i>
                         </a></li>
-                    <li><a href="#">Mis compras
+                    <li class="site-ut1"><a href="#">Mis compras
                             <i class="fas fa-shopping-cart"></i>
                         </a></li>
                 </ul>
             </nav>
+
 
         </nav>
         <br>
@@ -77,42 +78,65 @@
             <article class="formularioCont">
 
                 <form method="POST" action="#" class="registro-form">
+                    <label for="name-last">Nombre y Apellido</label>
                     <div>
-                        <input type="text" placeholder=" Nombre y Apellido " name="name-last"
-                            class="name-lastname"></input>
+                        <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required type="text"
+                            placeholder=" Nombre y Apellido " name="name-last" class="name-lastname"></input>
+
                     </div>
+                    <label for="username">Nombre de Usuario</label>
                     <div>
-                        <input type="text" placeholder=" Username " name="username" class="username"></input>
+                        <input required type="text" placeholder=" Username " name="username" class="username"></input>
                     </div>
+                    <label for="email">Correo Electronico</label>
                     <div>
-                        <input type="text" placeholder=" Email " name="email" class="email"></input>
+                        <input required type="text" placeholder=" Email " name="email" class="email"></input>
                     </div>
                     <label for="pass">Contraseña</label>
                     <div>
-
-                        <input type="password" placeholder=" Contraseña " name="pass" class="pass"></input>
+                        <input required type="password" placeholder=" Contraseña " name="pass" class="pass"></input>
                     </div>
                     <label for="conpass">Confirmar la contraseña</label>
                     <div>
-                        <input type="password-conf" placeholder=" Confirmar Contraseña " name="conpass"
+                        <input required type="password-conf" placeholder=" Confirmar Contraseña " name="conpass"
                             class="conpass"></input>
+                    </div>
+                    <div> <label for="utility"> ¿Busca vender o solo comprar? </label></div>
+                    <div> <label for="comprar"> Comprar </label>
+                        <input required type="checkbox" name="comprar" value="Comprar">
+                        <label for="Vender">Vender</label>
+                        <input type="checkbox" name="Vender" value="Vender">
                     </div>
                     <label for="birthdate">Introduce tu fecha de nacimiento</label>
                     <div>
-                        <input type="text" placeholder="  mm/dd/yyyy" name="birthdate" class="birthdate"></input>
+                        <input required type="text" placeholder="  mm/dd/yyyy" name="birthdate"
+                            class="birthdate"></input>
                     </div>
                     <label for="adress">Domicilio</label>
                     <div>
-                        <input type="text" placeholder=" Domicilio " name="adress" class="adress"></input>
+                        <input required type="text" placeholder=" Domicilio " name="adress" class="adress"></input>
                     </div>
                     <label for="img">Selecciona tu Imagen:</label>
                     <div>
-                        <input type="file" id="img" name="img" accept=".jpg,.png">
+                        <input required type="file" id="img" name="img" accept=".jpg,.png">
                         <input type="submit">
                     </div>
+                    <div> <label for="interest"> Selecciona las Categorias que te interesan: </label></div>
+                    <label for="Electro"> Electronica </label>
+                    <input type="checkbox" name="Electro" value="Electro">
+                    <label for="Moda"> Moda </label>
+                    <input type="checkbox" name="Moda" value="Moda">
+                    <label for="Hogar"> Hogar </label>
+                    <input type="checkbox" name="Hogar" value="Hogar">
+                    <label for="Vida"> Vida Sana </label>
+                    <input type="checkbox" name="Vida Sana" value="Vida Sana">
+                    <div>
+                        <a href='/views/home.html'> <input type="submit" class="boton"></button>
+                        </a>
+                        <input type="reset" class="boton" placeholder=" Reset "></button>
+                    </div>
                 </form>
-                <a href='/views/home.html'> <button type="submit" class="boton" placeholder=" Enviar "> </a>
-                <button type="reset" class="boton" placeholder=" Reset ">
+
 
             </article>
         </section>
@@ -161,12 +185,13 @@
             </article>
         </section>
         <br>
-        <section>
-            <article>
-                <h5>Copyright © 1999-2021 MercadoLiebre S.R.L.</h5>
-            </article>
-        </section>
+
     </footer>
 </body>
+<section>
+    <article>
+        <h5 class="h5">Copyright © 1999-2021 MercadoLiebre S.R.L.</h5>
+    </article>
+</section>
 
 </html>

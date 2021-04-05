@@ -29,20 +29,36 @@ main {
  flex-wrap: wrap;
 }
 
-.siteCat,
+.siteCat{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+    
+}
 .login2 {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
 }
 
+.cat1,
+.cat2,
+.cat3,
+.cat4,
+.site-ut1,
+.site-ut2,
+.site-ut3 {
+    padding: 6px;
+}
+
 .logoYBus {
     display: flex;
-    flex-wrap: wrap;
+ 
 }
 
 .logo {
-  flex : 0 1 auto;
+
   box-sizing: content-box;
   width: 50%;
   margin: 15px 5px;
@@ -50,8 +66,9 @@ main {
 }
 
 .navbar {
-    flex: 1 1 auto;
+    visibility: visible;
     display: flex;
+    justify-content: space-around;
 }
 
 .cajaBus {
@@ -67,7 +84,6 @@ main {
     justify-content: center;
     align-items: center;
     color: #666;
-    
     
 }
 
@@ -223,6 +239,7 @@ main {
  font-size: 15px;
  margin: 20px;
  margin: 20px;
+ padding: 5px;
 
   }
 
@@ -231,9 +248,9 @@ main {
         border: none;
         color: white;
         text-decoration: black;
-        padding: 15px 32px;
+        padding: 10px 15px;
         text-align: center;
-        border-radius: 12px;
+        border-radius: 8px;
         display: inline-block;
         font-size: 13px;
         margin: 5px;
