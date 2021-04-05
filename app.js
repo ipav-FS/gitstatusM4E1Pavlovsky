@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views', 'register.html'));
+    res.sendFile(path.join(__dirname, '/views', 'login.html'));
 });
 
 app.listen(port, () => {
